@@ -105,26 +105,26 @@ public class WordCount {
     GenericOptionsParser parser = new GenericOptionsParser(args);
     args = parser.getRemainingArgs();
 
-    if (args.length != 4) {
-      System.out.println("Usage: hadoop jar bigquery_wordcount.jar "
-          + "[projectId] [fullyQualifiedInputTableId] [fieldName] [fullyQualifiedOutputTableId]");
-      String indent = "    ";
-      System.out.println(indent
-          + "projectId - Project under which to issue the BigQuery operations. "
-          + "Also serves as the default project for table IDs which don't explicitly specify a "
-          + "project for the table.");
-      System.out.println(indent
-          + "fullyQualifiedInputTableId - Input table ID of the form "
-          + ":.");
-      System.out.println(indent
-          + "fieldName - Name of the field to count in the input table, e.g. 'word' in "
-          + "publicdata:samples.shakespeare or 'repository_name' in "
-          + "publicdata:samples.github_timeline.");
-      System.out.println(indent
-          + "fullyQualifiedOutputTableId - Output table ID of the form "
-          + ":.");
-      System.exit(1);
-    }
+//    if (args.length != 4) {
+//      System.out.println("Usage: hadoop jar bigquery_wordcount.jar "
+//          + "[projectId] [fullyQualifiedInputTableId] [fieldName] [fullyQualifiedOutputTableId]");
+//      String indent = "    ";
+//      System.out.println(indent
+//          + "projectId - Project under which to issue the BigQuery operations. "
+//          + "Also serves as the default project for table IDs which don't explicitly specify a "
+//          + "project for the table.");
+//      System.out.println(indent
+//          + "fullyQualifiedInputTableId - Input table ID of the form "
+//          + ":.");
+//      System.out.println(indent
+//          + "fieldName - Name of the field to count in the input table, e.g. 'word' in "
+//          + "publicdata:samples.shakespeare or 'repository_name' in "
+//          + "publicdata:samples.github_timeline.");
+//      System.out.println(indent
+//          + "fullyQualifiedOutputTableId - Output table ID of the form "
+//          + ":.");
+//      System.exit(1);
+//    }
 
     // Global parameters from args.
     String projectId = "healthcare-12";
