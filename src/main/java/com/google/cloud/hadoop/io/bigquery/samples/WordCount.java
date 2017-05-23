@@ -127,14 +127,14 @@ public class WordCount {
     }
 
     // Global parameters from args.
-    String projectId = args[0];
+    String projectId = "healthcare-12";
 
     // Set InputFormat parameters from args.
-    String fullyQualifiedInputTableId = args[1];
-    String fieldName = args[2];
+    String fullyQualifiedInputTableId = "publicdata:samples.shakespeare";
+    String fieldName = "word";
 
     // Set OutputFormat parameters from args.
-    String fullyQualifiedOutputTableId = args[3];
+    String fullyQualifiedOutputTableId = "healthcare-12:Mihin_Data_Sample.Encounter_Entry123";
 
     // Default OutputFormat parameters for this sample.
     String outputTableSchema =
